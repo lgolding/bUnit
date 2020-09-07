@@ -9,7 +9,7 @@ namespace Bunit.TestDoubles.JSInterop
 	/// but was not provided.
 	/// </summary>
 	[SuppressMessage("Design", "CA1032:Implement standard exception constructors", Justification = "<Pending>")]
-	public class MissingMockJSRuntimeException : Exception
+	public sealed class MissingMockJSRuntimeException : Exception
 	{
 		/// <summary>
 		/// Identifier string used in the JSInvoke method.
@@ -32,7 +32,7 @@ namespace Bunit.TestDoubles.JSInterop
 		{
 			Identifier = identifier;
 			Arguments = arguments;
-			HelpLink = "https://github.com/egil/razor-components-testing-library/wiki/Mocking-JsRuntime";
+			HelpLink = "https://bunit.egilhansen.com/docs/test-doubles/mocking-ijsruntime";
 		}
 	}
 }
